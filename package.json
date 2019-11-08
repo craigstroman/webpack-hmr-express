@@ -1,0 +1,33 @@
+{
+  "name": "webpack-hot-module-replacement",
+  "version": "1.0.0",
+  "description": "WebPack hot module replacement with ExpressJS",
+  "main": "server/index.js",
+  "scripts": {
+    "server": "NODE_ENV=development nodemon ./server/index.js",
+    "client": "NODE_ENV=development webpack -d --config webpack.config.js --mode development --progress --watch"
+  },
+  "author": "Craig Stroman",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node": "^12.13.0",
+    "pug": "^2.0.4",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@babel/plugin-proposal-decorators": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-loader": "^8.0.6",
+    "nodemon": "^1.19.4",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.6.1",
+    "webpack-hot-middleware": "^2.24.3"
+  }
+}

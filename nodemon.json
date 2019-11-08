@@ -1,0 +1,8 @@
+{
+  "ignore": [
+    "client/",
+    "public/",
+    "node_modules/",
+    "webpack.config.js"
+  ]
+}
