@@ -1,5 +1,4 @@
 const path = require('path');
-const http = require('http');
 const cors = require('cors');
 const express = require('express');
 const webpack = require('webpack');
@@ -38,11 +37,7 @@ app.use('/', (req, res) => {
   });
 });
 
-const ws = http.createServer(app);
-
-ws.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`The server is listening on port ${PORT}.`);
-  // ws.timeout = 0;
-  // ws.keepAliveTimeout = 0;
 });
 
